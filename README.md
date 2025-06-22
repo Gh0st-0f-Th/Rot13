@@ -21,5 +21,5 @@ Convert hidden messages in seconds, over and over again—until your fingers giv
 2. Run the provided installer:
 
 ```bash
-chmod +x install.sh
-./install.sh
+chmod +x install
+./install
