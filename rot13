@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Light green printer function
+print_green() {
+    echo -e "\033[1;32m$1\033[0m"
+}
+
+while true; do
+    print_green "🌀 Welcome to Infinite ROT13 🔁 (Ctrl+C to escape)"
+    echo
+    read -p "🔐 Hidden message? " input_message
+    echo
+
+    if [[ -z "$input_message" ]]; then
+        print_green "⚠️  You didn't type anything. Try again."
+        echo
+        sleep 1
+        clear
+        continue
+    fi
+
+    print_green "🔓 Decoded message:"
+    echo
+    print_green "$(tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< "$input_message")"
+    echo
+    read -p "🔁 Press Enter to continue..." temp
+    clear
+done

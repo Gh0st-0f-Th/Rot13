@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Simple installer for ROT13 in Termux
+
+# Define target location
+TARGET="$PREFIX/bin/rot13"
+
+# Move the script and set permissions
+mv ./rot13 "$TARGET"
+chmod +x "$TARGET"
+
+# Confirmation
+echo -e "\n✅ Installed as: \033[1;32mrot13\033[0m"
+echo -e "🚀 Now you can just run: \033[1;32mrot13\033[0m from anywhere\n"
