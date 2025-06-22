@@ -22,5 +22,6 @@ Convert hidden messages in seconds, over and over again—until your fingers giv
 
 ```bash
 git clone https://github.com/Gh0st-0f-Th/Rot13.git
+cd Rot13
 chmod +x install
 ./install
